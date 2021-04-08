@@ -69,6 +69,7 @@
     display: block;
     border-radius: 10px;
     margin-right: 10px;
+    font-family: "Open Sans";
 }
 
 .banner-article .content {
@@ -109,6 +110,7 @@
     display: inline-grid;
     grid-template-columns: auto auto;
     width: 66%;
+    font-family: "Open Sans";
 }
 
 .normal-article {
