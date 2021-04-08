@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+* {
+    margin: 0px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.title {
+    font-family: "Open Sans", sans-serif;
+    font-size: 32px;
+    font-weight: lighter;
+    margin: 10px;
+}
+
+.header {
+    border-bottom: 5px solid blue;
+    margin-top: 5px;
+}
