@@ -105,6 +105,29 @@
     width: 200px;
 }
 
+.articles {
+    display: inline-grid;
+    grid-template-columns: auto auto;
+    width: 66%;
+}
+
+.normal-article {
+    width: 450px;
+    margin: 10px;
+}
+
+.normal-article .content h4 {
+    font-size: 25px;
+}
+
+.normal-article .content h5 {
+    color: #828282;
+}
+
+.normal-article .content p {
+    color: #333333;
+}
+
 .active {
     font-weight: bolder;
 }
