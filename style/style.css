@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 
 * {
     margin: 0px;
@@ -13,9 +14,97 @@
     font-size: 32px;
     font-weight: lighter;
     margin: 10px;
+    float: left;
+    display: block;
 }
 
 .header {
     border-bottom: 5px solid blue;
     margin-top: 5px;
+
+    overflow: hidden;
+}
+
+.header input[type=text] {
+    float: right;
+    padding: 6px;
+    border: 2px solid lightgray;
+    border-radius: 5px;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar ul {
+    margin: 10px;
+    padding-left: 0px;
+}
+
+.navbar ul li{
+    font-family: Montserrat;
+    display: inline;
+}
+
+.navbar ul li a:link { text-decoration: none; }
+
+.navbar ul li a:visited { text-decoration: none; }
+
+.navbar ul li a:hover { text-decoration: none; }
+
+.navbar ul li a:active { text-decoration: none; }
+
+.navbar ul li a {
+    color: #4f4f4f;
+}
+
+.banner-article {
+    background-image: linear-gradient(90deg, rgba(2,0,36,0) 29%, rgba(0,0,0,0.7454545454545455) 56%),
+        url(https://unsplash.com/photos/B8Ee_6rjxeA/download?force=true);
+    background-size: cover;
+    height: 350px;
+    color: white;
+    display: block;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+.banner-article .content {
+    width: 40%;
+    float: right;
+    margin: 10px;
+    display: grid;
+    grid-gap: 10px;
+}
+
+.banner-article .article-title {
+    font-family: "Open Sans";
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.banner-article h5 {
+    font-family: "Montserrat";
+    font-size: 14px;
+    font-weight: lighter;
+}
+
+.info {
+    font-weight: 900;
+    margin: 0;
+    padding: 0;
+}
+
+.banner-article p {
+    float: right;
+}
+
+.meerlezen {
+    width: 200px;
+}
+
+.active {
+    font-weight: bolder;
 }
