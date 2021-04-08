@@ -8,7 +8,7 @@
 </head>
 <body>
     <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js" defer></script>
+    <script src="https://unpkg.com/vue@next"></script>
     <script src="scripts/script.js" defer></script>
 
     <header class="header">
@@ -24,31 +24,17 @@
         </ul>
     </div>
 
-    <div class="banner-article">
-        <div class="content">
-            <h3 class="article-title">{{titel}}</h3>
-            <h5>Door <span class="info">{{schrijver}}</span> op <span class="info">{{datum}}</span></h5>
-            <p>{{samenvatting}}</p>
-            <button class="meerlezen">Meer lezen</button>
-        </div>
+    <div class="banners">
+        <banner-article titel="Ischa’s scheerroutine" schrijver="Ischa Sachs" datum="07/03/2021" samenvatting="Het scheren van een baard is niet zo makkelijk als je misschien denkt, in zijn dagelijkse blog laat Ischa zien hoe hij te werk gaat. In zijn eerste artikel bespreekt hij zijn routine..."></banner-article>
     </div>
 
     <div class="website-content">
         <div class="articles">
-            <div class="normal-article" id="article-1">
-                <div class="content">
-                    <h4>{{titel}}</h4>
-                    <h5>Door <span class="info">{{schrijver}}</span> op <span class="info">{{datum}}</span></h5>
-                    <p>{{samenvatting}}</p>
-                </div>
-            </div>
-            <div class="normal-article" id="article-2">
-                <div class="content">
-                    <h4>{{titel}}</h4>
-                    <h5>Door <span class="info">{{schrijver}}</span> op <span class="info">{{datum}}</span></h5>
-                    <p>{{samenvatting}}</p>
-                </div>
-            </div>
+            <normal-article titel="Hoe ‘The Stand’ ons een les kan geven over klimaatverandering." schrijver="Taeke Roukema" datum="12/04/2021" samenvatting="‘The Stand’  van Stephen King gaat over een virus die de wereld overgaat en de chaos die daardoor volgt. Velen hebben het daarom al gekoppeld met de huidige coronacrisis. Maar wat zegt het boek over klimaatverandering en kunnen we daar ook iets van leren?"></normal-article>
+            <normal-article titel="Wat betekent basisinkomen voor de gemiddelde lesbische man?" schrijver="Riemer Kerkstra" datum="05/04/2021" samenvatting="Binnen linkse kringen is het basisinkomen al jaren een populair idee. Maar wat betekent het nou eigenlijk voor mij, de gemiddelde lesbische man?"></normal-article>
+            <normal-article titel="Titel" schrijver="Taeke Roukema" datum="12/04/2021" samenvatting="Hallo daar!"></normal-article>
+            <normal-article titel="Titel" schrijver="Taeke Roukema" datum="12/04/2021" samenvatting="Hallo daar!"></normal-article>
+            <normal-article titel="Titel" schrijver="Taeke Roukema" datum="12/04/2021" samenvatting="Hallo daar!"></normal-article>
         </div>
         <div class="socials">
             <h2>Volg ons</h2>

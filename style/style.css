@@ -50,15 +50,16 @@
 
 .navbar ul li{
     font-family: Montserrat;
-    font-size: 20px;
+    font-size: 24px;
     display: inline;
+    padding-right: 10px;
 }
 
 .navbar ul li a:link { text-decoration: none; }
 
 .navbar ul li a:visited { text-decoration: none; }
 
-.navbar ul li a:hover { text-decoration: none; }
+.navbar ul li a:hover { text-decoration: underline; }
 
 .navbar ul li a:active { text-decoration: none; }
 
@@ -114,7 +115,7 @@
 
 .articles {
     display: inline-grid;
-    grid-template-columns: repeat(2, auto);
+    grid-template-columns: repeat(3, auto);
     width: 66%;
     font-family: "Open Sans";
 }
@@ -152,6 +153,10 @@
 
 .socials .icons {
     margin: 5px;
+}
+
+.socials .icons .iconify {
+    padding-right: 5px;
 }
 
 .active {
