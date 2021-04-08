@@ -11,7 +11,7 @@
 
 .title {
     font-family: "Open Sans", sans-serif;
-    font-size: 32px;
+    font-size: 48px;
     font-weight: lighter;
     margin: 10px;
     float: left;
@@ -23,6 +23,11 @@
     margin-top: 5px;
 
     overflow: hidden;
+    height: 125px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .header input[type=text] {
@@ -45,6 +50,7 @@
 
 .navbar ul li{
     font-family: Montserrat;
+    font-size: 20px;
     display: inline;
 }
 
