@@ -108,7 +108,7 @@
 
 .articles {
     display: inline-grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: repeat(2, auto);
     width: 66%;
     font-family: "Open Sans";
 }
@@ -128,6 +128,23 @@
 
 .normal-article .content p {
     color: #333333;
+}
+
+.website-content {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+}
+
+.socials {
+    margin: 10px;
+}
+
+.socials h2 {
+    text-align: left;
+}
+
+.socials .icons {
+    margin: 5px;
 }
 
 .active {
