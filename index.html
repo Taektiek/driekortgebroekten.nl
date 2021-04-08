@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js" defer></script>
     <script src="scripts/script.js" defer></script>
 
@@ -32,19 +33,31 @@
         </div>
     </div>
 
-    <div class="articles">
-        <div class="normal-article" id="article-1">
-            <div class="content">
-                <h4>{{titel}}</h4>
-                <h5>Door <span class="info">{{schrijver}}</span> op <span class="info">{{datum}}</span></h5>
-                <p>{{samenvatting}}</p>
+    <div class="website-content">
+        <div class="articles">
+            <div class="normal-article" id="article-1">
+                <div class="content">
+                    <h4>{{titel}}</h4>
+                    <h5>Door <span class="info">{{schrijver}}</span> op <span class="info">{{datum}}</span></h5>
+                    <p>{{samenvatting}}</p>
+                </div>
+            </div>
+            <div class="normal-article" id="article-2">
+                <div class="content">
+                    <h4>{{titel}}</h4>
+                    <h5>Door <span class="info">{{schrijver}}</span> op <span class="info">{{datum}}</span></h5>
+                    <p>{{samenvatting}}</p>
+                </div>
             </div>
         </div>
-        <div class="normal-article" id="article-2">
-            <div class="content">
-                <h4>{{titel}}</h4>
-                <h5>Door <span class="info">{{schrijver}}</span> op <span class="info">{{datum}}</span></h5>
-                <p>{{samenvatting}}</p>
+        <div class="socials">
+            <h2>Volg ons</h2>
+            <div class="icons">
+                <span class="iconify" data-icon="akar-icons:twitter-fill" data-inline="false"></span>
+                <span class="iconify" data-icon="akar-icons:youtube-fill" data-inline="false"></span>
+                <span class="iconify" data-icon="cib:tiktok" data-inline="false"></span>
+                <span class="iconify" data-icon="ant-design:mail-filled" data-inline="false"></span>
+                <span class="iconify" data-icon="bi:rss-fill" data-inline="false"></span>
             </div>
         </div>
     </div>
