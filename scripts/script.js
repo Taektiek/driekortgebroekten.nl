@@ -38,5 +38,3 @@ app.component('banner-article', {
 })
 
 const vm = app.mount("body")
-
-console.log(vm)
