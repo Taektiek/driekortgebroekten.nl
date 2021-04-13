@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drie Kortgebroekten</title>
+    <link rel="stylesheet" href="/static/style/style.css">
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</head>
+<body>
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="/static/scripts/script.js" defer></script>
+
+    <header class="header">
+        <h1 class="title"><span class="bold">Drie</span> Kortgebroekten</h1>
+        <input type="text" placeholder="Search...">
+    </header>
+
+    <div class="navbar">
+        <ul>
+            <li id="blog" class="active"><a href>Blog</a></li>
+            <li id="podcast" class=""><a href>Podcast</a></li>
+            <li id="recensies" class=""><a href>Recensies</a></li>
+        </ul>
+    </div>
+    {% block content %}
+    {% endblock %}
+</body>
+</html>
