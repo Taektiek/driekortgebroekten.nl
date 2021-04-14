@@ -1,30 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Drie Kortgebroekten</title>
-    <link rel="stylesheet" href="style/style.css">
-    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-</head>
-<body>
-    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
-    <script src="https://unpkg.com/vue@next"></script>
-    <script src="scripts/script.js" defer></script>
+{% extends "base.html" %}
 
-    <header class="header">
-        <h1 class="title"><span class="bold">Drie</span> Kortgebroekten</h1>
-        <input type="text" placeholder="Search...">
-    </header>
-
-    <div class="navbar">
-        <ul>
-            <li id="blog" class="active"><a href>Blog</a></li>
-            <li id="podcast" class=""><a href>Podcast</a></li>
-            <li id="recensies" class=""><a href>Recensies</a></li>
-        </ul>
-    </div>
-
+{% block content %}
     <div class="banners">
         <banner-article titel="Ischa’s scheerroutine" schrijver="Ischa Sachs" datum="07/03/2021" samenvatting="Het scheren van een baard is niet zo makkelijk als je misschien denkt, in zijn dagelijkse blog laat Ischa zien hoe hij te werk gaat. In zijn eerste artikel bespreekt hij zijn routine..."></banner-article>
     </div>
@@ -49,5 +25,4 @@
         </div>
     </div>
 
-</body>
-</html>
+{% endblock %}
