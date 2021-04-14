@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Drie Kortgebroekten</title>
-    <link rel="stylesheet" href="/static/style/style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style/style.css') }}">
     <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 </head>
 <body>
@@ -17,8 +17,8 @@
 
     <div class="navbar">
         <ul>
-            <li id="blog" class="{{ blog }}"><a href>Blog</a></li>
-            <li id="podcast" class="{{ podcast }}"><a href>Podcast</a></li>
+            <li id="blog" class="{{ blog }}"><a href="/blog">Blog</a></li>
+            <li id="podcast" class="{{ podcast }}"><a href="/podcasts">Podcast</a></li>
             <li id="recensies" class="{{ recensies }}"><a href>Recensies</a></li>
         </ul>
     </div>
