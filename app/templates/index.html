@@ -2,10 +2,16 @@
 
 {% block content %}
     <div class="banners">
+        {% with article = bannerarticle %}
+            {% include "_bannerarticle.html" %}
+        {% endwith %}
     </div>
 
     <div class="website-content">
         <div class="articles">
+            {% for article in  articles %}
+                {% include "_frontpagearticle.html" %}
+            {% endfor %}
         </div>
         <div class="socials">
             <h2>Volg ons</h2>
