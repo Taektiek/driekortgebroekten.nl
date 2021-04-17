@@ -25,9 +25,9 @@
         {% endwith %}
     <div class="navbar">
         <ul>
-            <li id="blog" class="{{ blog }}"><a href="/blog">Blog</a></li>
-            <li id="podcast" class="{{ podcast }}"><a href="/podcasts">Podcast</a></li>
-            <li id="recensies" class="{{ recensies }}"><a href>Recensies</a></li>
+            <li id="blog" class="{{ blogclass }}"><a href="{{ url_for('index') }}">Blog</a></li>
+            <li id="podcast" class="{{ podcastclass }}"><a href="{{ url_for('podcast') }}">Podcast</a></li>
+            <li id="recensies" class="{{ recensiesclass }}"><a href>Recensies</a></li>
         </ul>
     </div>
     {% block content %}
