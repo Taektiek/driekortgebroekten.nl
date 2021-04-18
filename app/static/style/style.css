@@ -9,7 +9,7 @@
     font-weight: bold;
 }
 
-.title {
+.header .title {
     font-family: "Open Sans", sans-serif;
     font-size: 48px;
     font-weight: lighter;
@@ -135,6 +135,61 @@
 
 .normal-article .content p {
     color: hsl(0, 0%, 20%);
+}
+
+.podcasts-content {
+    width: 66%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.podcasts-content .head .title {
+    font-size: 48px;
+    font-family: "Open Sans";
+    font-weight: 300;
+}
+
+.podcasts-content .head .subtitle {
+    font-size: 18px;
+    font-family: "Montserrat";
+    font-weight: 100;
+}
+
+.podcasts-content hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 1px solid hsl(0, 0%, 85%);
+}
+
+.podcasts-content .podcasts {
+    display: grid;
+}
+
+.podcasts-content .podcasts .podcast {
+    margin-bottom: 20px;
+}
+
+.podcasts-content .podcasts .podcast img {
+    float:left; display:inline; width: 40%;
+    margin-right: 15px;
+    width: 200px;
+    height: 200px;
+    filter: drop-shadow(3px 3px 8px hsl(0, 0%, 0%, 50%));
+}
+
+.podcasts-content .podcasts .podcast .text {
+    float:left; display:inline; width: 40%;
+}
+
+.podcasts-content .podcasts .podcast .text .title {
+    font-family: "Montserrat";
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+.podcasts-content .podcasts .podcast .text .description{
+    font-family: "Montserrat";
+    font-size: 16px;
 }
 
 .website-content {
