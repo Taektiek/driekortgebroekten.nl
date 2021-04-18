@@ -1,1 +1,2 @@
 FLASK_APP=driekortgebroekten.py
+FLASK_DEBUG=1
