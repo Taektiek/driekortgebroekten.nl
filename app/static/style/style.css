@@ -19,7 +19,7 @@
 }
 
 .header {
-    border-bottom: 5px solid blue;
+    border-bottom: 5px solid hsl(240, 100%, 50%);
     margin-top: 5px;
 
     overflow: hidden;
@@ -33,7 +33,7 @@
 .header input[type=text] {
     float: right;
     padding: 6px;
-    border: 2px solid lightgray;
+    border: 2px solid hsl(0, 0%, 83%);
     border-radius: 5px;
     margin-top: 8px;
     margin-right: 16px;
@@ -64,15 +64,15 @@
 .navbar ul li a:active { text-decoration: none; }
 
 .navbar ul li a {
-    color: #4f4f4f;
+    color: hsl(0, 0%, 31%);
 }
 
 .banner-article {
-    background-image: linear-gradient(90deg, rgba(2,0,36,0) 29%, rgba(0,0,0,0.7454545454545455) 56%),
+    background-image: linear-gradient(90deg, hsla(243, 100%, 7%, 0) 29%, hsla(0, 0%, 0%, 0.745) 56%),
         url(https://unsplash.com/photos/B8Ee_6rjxeA/download?force=true);
     background-size: cover;
     height: 350px;
-    color: white;
+    color: hsl(0, 0%, 100%);
     display: block;
     border-radius: 10px;
     margin-right: 10px;
@@ -130,11 +130,11 @@
 }
 
 .normal-article .content h5 {
-    color: #828282;
+    color: hsl(0, 0%, 51%);
 }
 
 .normal-article .content p {
-    color: #333333;
+    color: hsl(0, 0%, 20%);
 }
 
 .website-content {
