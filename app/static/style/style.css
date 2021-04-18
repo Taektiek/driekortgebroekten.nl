@@ -234,6 +234,29 @@
     font-size: 14px;
 }
 
+.login {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login h1{
+    font-family: "Open Sans";
+    margin-bottom: 15px;
+}
+
+.login form {
+    font-family: "Montserrat";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login form * {
+    margin: 3px;
+}
+
 .website-content {
     display: grid;
     grid-template-columns: repeat(2, auto);
