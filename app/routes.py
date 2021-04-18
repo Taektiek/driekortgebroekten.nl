@@ -42,3 +42,7 @@ def logout():
 @app.route('/podcast')
 def podcast():
     return render_template("podcasts.html", podcastclass="active")
+
+@app.route('/boekenclub')
+def boekenclub():
+    return render_template("boekenclub.html", boekenclubclass="active")
