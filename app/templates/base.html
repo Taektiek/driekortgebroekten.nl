@@ -14,12 +14,20 @@
         <h1 class="title"><span class="bold">Drie</span> Kortgebroekten</h1>
         <input type="text" placeholder="Search...">
     </header>
-
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+        <ul>
+            {% for message in messages %}
+            <li>{{ message }}</li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+        {% endwith %}
     <div class="navbar">
         <ul>
-            <li id="blog" class="{{ blog }}"><a href="/blog">Blog</a></li>
-            <li id="podcast" class="{{ podcast }}"><a href="/podcasts">Podcast</a></li>
-            <li id="recensies" class="{{ recensies }}"><a href>Recensies</a></li>
+            <li id="blog" class="{{ blogclass }}"><a href="{{ url_for('index') }}">Blog</a></li>
+            <li id="podcast" class="{{ podcastclass }}"><a href="{{ url_for('podcast') }}">Podcast</a></li>
+            <li id="recensies" class="{{ recensiesclass }}"><a href>Recensies</a></li>
         </ul>
     </div>
     {% block content %}
