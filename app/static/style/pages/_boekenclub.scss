@@ -1,0 +1,38 @@
+.boekenclub-content { 
+    .banner {
+        background-color: hsl(0, 0%, 33%);
+        width: 100%;
+        min-height: 350px;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .content {
+            width: 66%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .cover {
+                max-height: 300px;
+                width: auto;
+                // filter: drop-shadow(3px 3px 8px hsl(0, 0%, 0%, 30%));
+                margin-right: 20px;
+            }
+            .title {
+                margin-bottom: 15px;
+                font-family: "Montserrat";
+                font-size: 36px;
+            }
+            .description {
+                font-family: "Montserrat";
+                font-size: 16px;
+                font-weight: 100;
+            }
+            .deadline {
+                margin-top: 10px;
+                font-family: "Montserrat";
+                font-size: 14px;
+            }
+        }
+    }
+}
