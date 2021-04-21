@@ -46,3 +46,7 @@ def podcast():
 @app.route('/boekenclub')
 def boekenclub():
     return render_template("boekenclub.html", boekenclubclass="active")
+
+@app.route('/thestand-210412')
+def thestand():
+    return render_template("thestand.html")

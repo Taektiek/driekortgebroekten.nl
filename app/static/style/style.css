@@ -129,6 +129,11 @@
     font-size: 25px;
 }
 
+.normal-article .content h4 a {
+    color: hsla(0, 0%, 0%, 0.745);
+    text-decoration: none;
+}
+
 .normal-article .content h5 {
     color: hsl(0, 0%, 51%);
 }
@@ -255,6 +260,67 @@
 
 .login form * {
     margin: 3px;
+}
+
+.blog-content {
+    width: 66%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.blog-content .title {
+    font-family: "Montserrat";
+    font-size: 36px;
+    font-weight: 1500;
+}
+
+.blog-content .subtitle {
+    font-family: "Montserrat";
+    font-size: 18px;
+    font-weight: 100;
+    color: hsl(0, 0%, 51%);
+}
+
+.blog-content .infobar {
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.blog-content .infobar p {
+    font-family: "Montserrat";
+    font-size: 18px;
+    font-weight: 100;
+    color: hsl(0, 0%, 51%);
+}
+
+.blog-content .infobar .left {
+    display: flex;
+    align-items: center;
+}
+
+.blog-content .infobar .left .profilepic {
+    height: 40px;
+    width: auto;
+    margin-right: 5px;
+}
+
+.blog-content .bannerimage {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.blog-content article {
+    font-family: "Open Sans";
+}
+
+.blog-content article h1 {
+    font-size: 32px;
 }
 
 .website-content {
