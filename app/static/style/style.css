@@ -246,14 +246,14 @@
   font-weight: lighter;
 }
 
-.banner-article p {
-  float: right;
-}
-
-.info {
+.banner-article h5 span.info {
   font-weight: 900;
   margin: 0;
   padding: 0;
+}
+
+.banner-article p {
+  float: right;
 }
 
 .meerlezen {
@@ -262,10 +262,21 @@
 
 .articles {
   font-family: "Open Sans";
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .articles .normal-article {
-  max-width: 450px;
+  width: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin: 10px;
 }
 
@@ -286,10 +297,24 @@
   color: #333333;
 }
 
+.articles .normal-article img {
+  width: 100px;
+  height: 100px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
 .website-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 .socials {

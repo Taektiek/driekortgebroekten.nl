@@ -24,16 +24,15 @@
         font-family: "Montserrat";
         font-size: 14px;
         font-weight: lighter;
+        span.info {
+            font-weight: 900;
+            margin: 0;
+            padding: 0;
+        }
     }
     p {
         float: right;
     }
-}
-
-.info {
-    font-weight: 900;
-    margin: 0;
-    padding: 0;
 }
 
 .meerlezen {
@@ -42,8 +41,14 @@
 
 .articles {
     font-family: "Open Sans";
+    flex-grow: 1;
+    
+    display: flex;
+    flex-wrap: wrap;
+
     .normal-article {
-        max-width: 450px;
+        width: 350px;
+        display: flex;
         margin: 10px;
         .content {
             h4 {
@@ -60,11 +65,18 @@
                 color: hsl(0, 0%, 20%);
             }
         }
+        img {
+            width: 100px;
+            height: 100px;
+            flex-shrink: 0;
+        }
     }
 }
 
 .website-content {
     display: flex;
+    justify-content: space-between;
+    flex-direction: row;
 }
 
 .socials {
