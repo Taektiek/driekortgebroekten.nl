@@ -49,4 +49,4 @@ def boekenclub():
 
 @app.route('/thestand-210412')
 def thestand():
-    return render_template("thestand.html")
+    return render_template("thestand.html", blogclass="active")
