@@ -7,3 +7,19 @@
 @import 'pages/index';
 @import 'pages/login';
 @import 'pages/podcasts';
+
+@media (min-width:1000px) {
+    .desktop-only {
+        display:block !important;
+    }
+}
+ 
+@media (max-width: 999px) {
+    .mobile-only {
+        display:block !important;
+    }
+ 
+    .desktop-only {
+        display:none !important;
+    }
+}

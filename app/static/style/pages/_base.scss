@@ -15,14 +15,14 @@
     margin-top: 5px;
 
     overflow: hidden;
-    height: 125px;
+    max-height: 125px;
 
     display: flex;
     align-items: center;
     justify-content: space-between;
     .title {
         font-family: "Open Sans", sans-serif;
-        font-size: 48px;
+        font-size: 4vw;
         font-weight: lighter;
         margin: 10px;
         float: left;

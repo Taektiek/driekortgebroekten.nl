@@ -16,7 +16,7 @@
   border-bottom: 5px solid blue;
   margin-top: 5px;
   overflow: hidden;
-  height: 125px;
+  max-height: 125px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -30,7 +30,7 @@
 
 .header .title {
   font-family: "Open Sans", sans-serif;
-  font-size: 48px;
+  font-size: 4vw;
   font-weight: lighter;
   margin: 10px;
   float: left;
@@ -261,16 +261,11 @@
 }
 
 .articles {
-  display: -ms-inline-grid;
-  display: inline-grid;
-  -ms-grid-columns: (auto)[3];
-      grid-template-columns: repeat(3, auto);
-  width: 66%;
   font-family: "Open Sans";
 }
 
 .articles .normal-article {
-  width: 450px;
+  max-width: 450px;
   margin: 10px;
 }
 
@@ -292,10 +287,9 @@
 }
 
 .website-content {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (auto)[2];
-      grid-template-columns: repeat(2, auto);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .socials {
@@ -379,8 +373,19 @@
 }
 
 .podcasts-content .podcasts {
-  display: -ms-grid;
-  display: grid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .podcasts-content .podcasts .podcast {
@@ -411,5 +416,20 @@
 .podcasts-content .podcasts .podcast .text .description {
   font-family: "Montserrat";
   font-size: 16px;
+}
+
+@media (min-width: 1000px) {
+  .desktop-only {
+    display: block !important;
+  }
+}
+
+@media (max-width: 999px) {
+  .mobile-only {
+    display: block !important;
+  }
+  .desktop-only {
+    display: none !important;
+  }
 }
 /*# sourceMappingURL=style.css.map */
