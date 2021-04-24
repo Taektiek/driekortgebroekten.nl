@@ -1,8 +1,8 @@
 from flask import render_template, flash, redirect, url_for
-from app import app
+from app import app, db
 from app.forms import LoginForm, WriteArticleForm
-from flask_login import login_user, logout_user, login_required
-from app.models import User
+from flask_login import login_user, logout_user, login_required, current_user
+from app.models import User, Article
 
 # In de view functie moet je aangeven welk deel van de navbar actief is. Dat doe je zo:
 # render_template("...html", naamvanonderdeel="active")
@@ -51,8 +51,16 @@ def boekenclub():
 def thestand():
     return render_template("thestand.html", blogclass="active")
 
-@app.route('/voegtoe')
+@app.route('/voegtoe', methods=['GET', 'POST'])
 @login_required
 def voegtoe():
     form = WriteArticleForm()
+    if form.validate_on_submit():
+        article = Article(title=form.title.data, subtitle=form.subtitle.data,
+                          summary=form.summary.data, body=form.body.data,
+                          author=current_user)
+        db.session.add(article)
+        db.session.commit()
+        flash('Het artikel is gepubliceerd!')
+        return redirect(url_for('index'))
     return render_template('artikelschrijven.html', title='Artikel toevoegen', form=form)
