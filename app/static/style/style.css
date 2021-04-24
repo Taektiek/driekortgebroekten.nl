@@ -443,6 +443,40 @@
   font-size: 16px;
 }
 
+.write-content {
+  width: 66%;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Montserrat";
+}
+
+.write-content input, .write-content textarea {
+  width: 100%;
+  font-family: "Open Sans";
+  border: 0;
+}
+
+.write-content form #title {
+  font-family: "Montserrat";
+  font-size: 36px;
+  font-weight: 1500;
+}
+
+.write-content form #subtitle {
+  font-family: "Montserrat";
+  font-size: 18px;
+  font-weight: 100;
+  color: #828282;
+}
+
+.write-content form #summary, .write-content form #body {
+  font-family: "Open Sans";
+}
+
+.write-content * {
+  margin-bottom: 5px;
+}
+
 @media (min-width: 1000px) {
   .desktop-only {
     display: block !important;
@@ -456,5 +490,9 @@
   .desktop-only {
     display: none !important;
   }
+}
+
+.error {
+  color: red;
 }
 /*# sourceMappingURL=style.css.map */
