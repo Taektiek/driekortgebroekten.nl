@@ -6,19 +6,20 @@ from app.models import Article
 
 
 class LoginForm(FlaskForm):
-    username = StringField('Gebruikersnaam', validators=[DataRequired(message='')])
-    password = PasswordField('Wachtwoord', validators=[DataRequired()])
+    username = StringField('Gebruikersnaam', validators=[DataRequired(message="Dit veld is noodzakelijk")])
+    password = PasswordField('Wachtwoord', validators=[DataRequired(message="Dit veld is noodzakelijk")])
     remember_me = BooleanField('Onthoud mij')
     submit = SubmitField('Log in')
 
 
 class WriteArticleForm(FlaskForm):
-    title = StringField('Titel', validators=[DataRequired()], default='Titel')
+    title = StringField('Titel', validators=[DataRequired(message="Dit veld is noodzakelijk")], default="Titel...")
     # url = StringField('URL', validators=[DataRequired(),
     #                                      AlphaDash(message="De url mag alleen maar tekst en streepjes bevatten")])
-    subtitle = StringField('Ondertitel')
-    summary = TextAreaField('Samenvatting', validators=[DataRequired(), Length(min=1, max=1028)])
-    body = TextAreaField('Artikel', validators=[DataRequired()])
+    subtitle = StringField('Ondertitel', default="Ondertitel...")
+    summary = TextAreaField('Samenvatting', validators=[DataRequired(message="Dit veld is noodzakelijk"), Length(min=1, max=1028)],
+                            default="Samenvatting...")
+    body = TextAreaField('Artikel', validators=[DataRequired(message="Dit veld is noodzakelijk")], default="Artikel...")
     submit = SubmitField('Voeg toe')
 
     def validate_title(self, title):
