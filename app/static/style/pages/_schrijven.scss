@@ -1,0 +1,32 @@
+.write-content {
+    width: 66%;
+    margin-left: auto;
+    margin-right: auto;
+
+    font-family: "Montserrat";
+    input, textarea {
+        width: 100%;
+        font-family: "Open Sans";
+        border: 0;
+    }
+    form {
+        #title {
+            font-family: "Montserrat";
+            font-size: 36px;
+            font-weight: 1500;
+        }
+        #subtitle {
+            font-family: "Montserrat";
+            font-size: 18px;
+            font-weight: 100;
+            color: hsl(0, 0%, 51%);
+        }
+        #summary, #body {
+            font-family: "Open Sans";
+        }
+    }
+
+    * {
+        margin-bottom: 5px;
+    }
+}
