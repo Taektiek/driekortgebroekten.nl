@@ -20,7 +20,7 @@ def index():
                  "date": "05/04/2021",
                  "summary": "Binnen linkse kringen is het basisinkomen al jaren een populair idee. Maar wat betekent het nou eigenlijk voor mij, de gemiddelde lesbische man?"}
                 ]
-    return render_template("index.html", blog="active", bannerarticle=bannerarticle, articles=articles)
+    return render_template("index.html", blogclass="active", bannerarticle=bannerarticle, articles=articles)
 
 @app.route('/login', methods=['GET', 'POST'])
 def login():
@@ -38,3 +38,15 @@ def login():
 def logout():
     logout_user()
     return redirect(url_for('index'))
+
+@app.route('/podcast')
+def podcast():
+    return render_template("podcasts.html", podcastclass="active")
+
+@app.route('/boekenclub')
+def boekenclub():
+    return render_template("boekenclub.html", boekenclubclass="active")
+
+@app.route('/thestand-210412')
+def thestand():
+    return render_template("thestand.html", blogclass="active")

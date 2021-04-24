@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+@import 'pages/base';
+@import 'pages/blogpost';
+@import 'pages/boekenclub';
+@import 'pages/index';
+@import 'pages/login';
+@import 'pages/podcasts';
+
+@media (min-width:1000px) {
+    .desktop-only {
+        display:block !important;
+    }
+}
+ 
+@media (max-width: 999px) {
+    .mobile-only {
+        display:block !important;
+    }
+ 
+    .desktop-only {
+        display:none !important;
+    }
+}

@@ -1,7 +1,8 @@
 <div class="normal-article">
     <div class="content">
-        <h4>{{ article.title }}</h4>
+        <h4><a href="{{ url_for('thestand') }}">{{ article.title }}</a></h4>
         <h5>Door <span class="info">{{ article.author }}</span> op <span class="info">{{ article.date }}</span></h5>
         <p>{{ article.summary }}</p>
     </div>
+    <img src="{{ url_for('static', filename='images/thestand.jpg') }}">
 </div>
