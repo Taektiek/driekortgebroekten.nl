@@ -20,7 +20,7 @@ def index():
                  "date": "05/04/2021",
                  "summary": "Binnen linkse kringen is het basisinkomen al jaren een populair idee. Maar wat betekent het nou eigenlijk voor mij, de gemiddelde lesbische man?"}
                 ]
-    return render_template("index.html", blogclass="active", bannerarticle=bannerarticle, articles=articles)
+    return render_template("index.html", title='Blog', blogclass="active", bannerarticle=bannerarticle, articles=articles)
 
 @app.route('/login', methods=['GET', 'POST'])
 def login():
@@ -32,7 +32,7 @@ def login():
             return redirect(url_for('login'))
         login_user(user, remember=form.remember_me.data)
         return redirect(url_for('index'))
-    return render_template("login.html", form=form)
+    return render_template("login.html", title='Inloggen', form=form)
 
 @app.route('/logout')
 def logout():
@@ -41,11 +41,11 @@ def logout():
 
 @app.route('/podcast')
 def podcast():
-    return render_template("podcasts.html", podcastclass="active")
+    return render_template("podcasts.html", title='Podcasts', podcastclass="active")
 
 @app.route('/boekenclub')
 def boekenclub():
-    return render_template("boekenclub.html", boekenclubclass="active")
+    return render_template("boekenclub.html", title='Boekenclub', boekenclubclass="active")
 
 @app.route('/thestand-210412')
 def thestand():

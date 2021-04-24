@@ -3,7 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% if title %}
+    <title>{{ title }} - Drie Kortgebroekten</title>
+    {% else %}
     <title>Drie Kortgebroekten</title>
+    {% endif %}
     <link rel="stylesheet" href="{{ url_for('static', filename='style/style.css') }}">
     <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 </head>
