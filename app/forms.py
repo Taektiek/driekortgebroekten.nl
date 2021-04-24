@@ -8,8 +8,8 @@ class LoginForm(FlaskForm):
     remember_me = BooleanField('Onthoud mij')
     submit = SubmitField('Log in')
 
-class ArticleForm(FlaskForm):
-    title = StringField('Title', validators=[DataRequired()])
+class WriteArticleForm(FlaskForm):
+    title = StringField('Titel', validators=[DataRequired()])
     subtitle = StringField('Ondertitel')
     summary = TextAreaField('Samenvatting', validators=[DataRequired(), Length(min=1, max=1028)])
     body = TextAreaField('Artikel', validators=[DataRequired()])
