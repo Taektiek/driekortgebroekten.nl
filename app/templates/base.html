@@ -34,10 +34,11 @@
     {% with messages = get_flashed_messages() %}
         {% if messages %}
         {% for message in messages %}
-        <div class="success message"><p>{{ message }}</p></div>
+        <div class="success message"><p>{{ message }}</p><img src="{{ url_for('static', filename='svg/close.svg') }}"></svg></div>
         {% endfor %}
         {% endif %}
         {% endwith %}
+        <div class="success message"><p>message</p><img src="{{ url_for('static', filename='svg/close.svg') }}" width=15px height=15px></svg></div>
     {% block content %}
     {% endblock %}
 </body>

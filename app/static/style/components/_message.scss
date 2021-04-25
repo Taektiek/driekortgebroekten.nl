@@ -1,50 +1,46 @@
 .message {
-    display: block;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin: 10px;
 
+    cursor: pointer;
     p {
         padding: 7px;
         font-family: "Montserrat";
         border-radius: 5px;
     }
+    img {
+        margin-right: 7px;
+    }
 }
 
 .success.message {
-    p {
-        color: #155724;
-        background-color: #d4edda;
-        border: 2px solid #c3e6cb;
-    }
+    color: #155724;
+    background-color: #d4edda;
+    border: 2px solid #c3e6cb;
 }
 
 .primary.message {
-    p {
-        color: #004085;
-        background-color: #cce5ff;
-        border: 2px solid #b8daff;
-    }
+    color: #004085;
+    background-color: #cce5ff;
+    border: 2px solid #b8daff;
 }
 
 .danger.message {
-    p {
-        color: #721c24;
-        background-color: #f8d7da;
-        border: 2px solid #f5c6cb;
-    }
+    color: #721c24;
+    background-color: #f8d7da;
+    border: 2px solid #f5c6cb;
 }
 
 .warning.message {
-    p {
-        color: #856404;
-        background-color: #fff3cd;
-        border: 2px solid #ffeeba;
-    }
+    color: #856404;
+    background-color: #fff3cd;
+    border: 2px solid #ffeeba;
 }
 
 .info.message {
-    p {
-        color: #0c5460;
-        background-color: #d1ecf1;
-        border: 2px solid #bee5eb;
-    }
+    color: #0c5460;
+    background-color: #d1ecf1;
+    border: 2px solid #bee5eb;
 }
