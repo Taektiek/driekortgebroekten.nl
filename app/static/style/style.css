@@ -272,6 +272,14 @@
       flex-wrap: wrap;
 }
 
+@media (max-width: 999px) {
+  .articles {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .articles .normal-article {
   width: 350px;
   display: -webkit-box;

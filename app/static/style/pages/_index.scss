@@ -45,6 +45,9 @@
     
     display: flex;
     flex-wrap: wrap;
+    @media (max-width: 999px) {
+        justify-content: center;
+   }
 
 
     .normal-article {
