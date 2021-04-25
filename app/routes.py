@@ -21,7 +21,7 @@ def login():
     if form.validate_on_submit():
         user = User.query.filter_by(username=form.username.data).first()
         if user is None or not user.check_password(form.password.data):
-            flash('Het ingevulde e-mailadres of wachtwoord is ongeldig.')
+            flash('Het ingevulde e-mailadres of wachtwoord is ongeldig.', 'danger')
             return redirect(url_for('login'))
         login_user(user, remember=form.remember_me.data)
         next_page = request.args.get('next')
@@ -57,6 +57,6 @@ def voegtoe():
                           author=current_user)
         db.session.add(article)
         db.session.commit()
-        flash('Het artikel is gepubliceerd!')
+        flash('Het artikel is gepubliceerd!', 'success')
         return redirect(url_for('index'))
     return render_template('artikelschrijven.html', blogclass="active", title='Artikel toevoegen', form=form)

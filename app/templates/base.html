@@ -31,10 +31,10 @@
             <li id="boekenclub" class="{{ boekenclubclass }}"><a href="{{ url_for('boekenclub') }}">Boekenclub</a></li>
         </ul>
     </div>
-    {% with messages = get_flashed_messages() %}
+    {% with messages = get_flashed_messages(with_categories=true) %}
         {% if messages %}
-        {% for message in messages %}
-        <div class="success message"><p>{{ message }}</p><img src="{{ url_for('static', filename='svg/close.svg') }}" width=15px height=15px></svg></div>
+        {% for category, message in messages %}
+        <div class="{{ category }} message"><p>{{ message }}</p><img src="{{ url_for('static', filename='svg/close.svg') }}" width=15px height=15px></svg></div>
         {% endfor %}
         {% endif %}
         {% endwith %}
