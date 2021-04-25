@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="blog-content">
+    <h1 class="title">{{ article.title }}</h1>
+    <h5 class="subtitle">{{ article.subtitle }}</h5>
+    <div class="infobar">
+        <div class="left">
+            <img src="{{ url_for('static', filename='images/taekepf.png') }}" alt="Taeke Roukema" class="profilepic">
+            <p class="name">Taeke Roukema</p>
+        </div>
+        <p class="date">{{ article.timestamp }}</p>
+    </div>
+    <img src="{{ url_for('static',  filename='images/virus.jpg') }}" alt="Een virus" class="bannerimage">
+    <article>
+        {{ article.body }}
+    </article>
+</div>
+
+{% endblock %}

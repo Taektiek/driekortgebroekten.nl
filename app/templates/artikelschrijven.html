@@ -16,6 +16,12 @@
                 <span class="error">[{{ error }}]</span>
             {% endfor %}
         </div>
+        <div class="subtitle">
+            {{ form.url }}
+            {% for error in form.url.errors %}
+                <span class="error">[{{ error }}]</span>
+            {% endfor %}
+        </div>
         <div class="summary">
             {{ form.summary(rows=4, cols=50) }}
             {% for error in form.summary.errors %}
