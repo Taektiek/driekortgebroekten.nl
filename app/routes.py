@@ -67,4 +67,4 @@ def voegtoe():
         db.session.commit()
         flash('Het artikel is gepubliceerd!')
         return redirect(url_for('index'))
-    return render_template('artikelschrijven.html', title='Artikel toevoegen', form=form)
+    return render_template('artikelschrijven.html', blogclass="active", title='Artikel toevoegen', form=form)
