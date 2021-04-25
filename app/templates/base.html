@@ -24,13 +24,6 @@
         <h1 class="title"><span class="bold">Drie</span> Kortgebroekten</h1>
         <input type="text" placeholder="Search..." class="desktop-only">
     </header>
-    {% with messages = get_flashed_messages() %}
-        {% if messages %}
-        {% for message in messages %}
-        <div class="success message"><p>{{ message }}</p></div>
-        {% endfor %}
-        {% endif %}
-        {% endwith %}
     <div class="navbar">
         <ul>
             <li id="blog" class="{{ blogclass }}"><a href="{{ url_for('index') }}">Blog</a></li>
@@ -38,6 +31,13 @@
             <li id="boekenclub" class="{{ boekenclubclass }}"><a href="{{ url_for('boekenclub') }}">Boekenclub</a></li>
         </ul>
     </div>
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+        {% for message in messages %}
+        <div class="success message"><p>{{ message }}</p></div>
+        {% endfor %}
+        {% endif %}
+        {% endwith %}
     {% block content %}
     {% endblock %}
 </body>
