@@ -10,6 +10,12 @@
     {% endif %}
     <link rel="stylesheet" href="{{ url_for('static', filename='style/style.css') }}">
     <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+    <script src="{{ url_for('static', filename='scripts/script.js') }}"></script>
+
 </head>
 <body>
     <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
@@ -21,7 +27,7 @@
     {% with messages = get_flashed_messages() %}
         {% if messages %}
         {% for message in messages %}
-        <div class="info-message"><p>{{ message }}</p></div>
+        <div class="success message"><p>{{ message }}</p></div>
         {% endfor %}
         {% endif %}
         {% endwith %}

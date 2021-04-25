@@ -9,6 +9,8 @@
 @import 'pages/podcasts';
 @import 'pages/schrijven';
 
+@import 'components/message';
+
 @media (min-width:1000px) {
     .desktop-only {
         display:block !important;
