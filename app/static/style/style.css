@@ -280,6 +280,11 @@
   margin: 10px;
 }
 
+.articles .normal-article .content {
+  width: 66%;
+  overflow: hidden;
+}
+
 .articles .normal-article .content h4 {
   font-size: 25px;
 }
@@ -298,8 +303,10 @@
 }
 
 .articles .normal-article img {
-  width: 100px;
-  height: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 33%;
+  height: 33%;
   -ms-flex-negative: 0;
       flex-shrink: 0;
 }

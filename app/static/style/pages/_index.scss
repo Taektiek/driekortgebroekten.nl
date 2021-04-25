@@ -46,11 +46,14 @@
     display: flex;
     flex-wrap: wrap;
 
+
     .normal-article {
         width: 350px;
         display: flex;
         margin: 10px;
         .content {
+            width: 66%;
+            overflow: hidden;
             h4 {
                 font-size: 25px;
                 a {
@@ -66,8 +69,9 @@
             }
         }
         img {
-            width: 100px;
-            height: 100px;
+            object-fit: cover;
+            width: 33%;
+            height: 33%;
             flex-shrink: 0;
         }
     }
