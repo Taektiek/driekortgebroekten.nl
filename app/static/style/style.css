@@ -56,6 +56,20 @@
           align-items: center;
 }
 
+.info-message {
+  display: block;
+  margin: 10px;
+}
+
+.info-message p {
+  padding: 7px;
+  font-family: "Montserrat";
+  color: #155724;
+  background-color: #d4edda;
+  border: 2px solid #c3e6cb;
+  border-radius: 5px;
+}
+
 .navbar ul {
   margin: 10px;
   padding-left: 0px;

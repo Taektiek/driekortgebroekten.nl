@@ -20,11 +20,9 @@
     </header>
     {% with messages = get_flashed_messages() %}
         {% if messages %}
-        <ul>
-            {% for message in messages %}
-            <li>{{ message }}</li>
-            {% endfor %}
-        </ul>
+        {% for message in messages %}
+        <div class="info-message"><p>{{ message }}</p></div>
+        {% endfor %}
         {% endif %}
         {% endwith %}
     <div class="navbar">
