@@ -43,9 +43,10 @@ def podcast():
 def boekenclub():
     return render_template("boekenclub.html", title='Boekenclub', boekenclubclass="active")
 
-@app.route('/thestand-210412')
-def thestand():
-    return render_template("thestand.html", blogclass="active")
+@app.route('/article/<url>')
+def article(url):
+    article = Article.query.filter_by(url=url).first()
+    return render_template("article.html", blogclass="active", article=article)
 
 @app.route('/voegtoe', methods=['GET', 'POST'])
 @login_required
@@ -54,7 +55,7 @@ def voegtoe():
     if form.validate_on_submit():
         article = Article(title=form.title.data, subtitle=form.subtitle.data,
                           summary=form.summary.data, body=form.body.data,
-                          author=current_user)
+                          author=current_user, url=form.url.data)
         db.session.add(article)
         db.session.commit()
         flash('Het artikel is gepubliceerd!')

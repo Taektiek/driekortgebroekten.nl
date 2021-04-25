@@ -3,6 +3,6 @@
         <h3 class="article-title">{{ article.title }}</h3>
         <h5>Door <span class="info">{{ article.author }}</span> op <span class="info">{{ article.date }}</span></h5>
         <p>{{ article.summary }}</p>
-        <button class="meerlezen">Meer lezen</button>
+        <a href="{{ url_for('article', url=article.url) }}"><button class="meerlezen" >Meer lezen</button></a>
     </div>
 </div>
