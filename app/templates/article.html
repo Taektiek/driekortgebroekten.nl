@@ -8,7 +8,7 @@
     <div class="infobar">
         <div class="left">
             <img src="{{ url_for('static', filename='images/taekepf.png') }}" alt="Taeke Roukema" class="profilepic">
-            <p class="name">Taeke Roukema</p>
+            <p class="name">{{ article.author }}</p>
         </div>
         <p class="date">{{ article.timestamp }}</p>
     </div>
