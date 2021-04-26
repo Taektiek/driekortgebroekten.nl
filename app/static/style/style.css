@@ -30,11 +30,22 @@
 
 .header .title {
   font-family: "Open Sans", sans-serif;
-  font-size: 4vw;
   font-weight: lighter;
   margin: 10px;
   float: left;
   display: block;
+}
+
+@media (min-width: 500px) {
+  .header .title {
+    font-size: 48px;
+  }
+}
+
+@media (max-width: 499px) {
+  .header .title {
+    font-size: 8vw;
+  }
 }
 
 .header input[type=text] {
