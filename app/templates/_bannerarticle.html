@@ -1,7 +1,11 @@
 <div class="banner-article desktop-only">
     <div class="content">
         <h3 class="article-title">{{ article.title }}</h3>
-        <h5>Door <span class="info">{{ article.author }}</span> op <span class="info">{{ article.date }}</span></h5>
+        <div class="subsub">
+            <h4 class="article-subtitle">{{ article.subtitle }}</h4>
+            <h5>Door <span class="info">{{ article.author }}</span> op <span class="info">{{ article.date }}</span></h5>
+        </div>
+        <hr>
         <p>{{ article.summary }}</p>
         <a href="{{ url_for('article', url=article.url) }}"><button class="meerlezen" >Meer lezen</button></a>
     </div>

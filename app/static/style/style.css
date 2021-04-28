@@ -229,8 +229,13 @@
   background-image: linear-gradient(90deg, rgba(2, 0, 36, 0) 29%, rgba(0, 0, 0, 0.745) 56%), url(https://unsplash.com/photos/B8Ee_6rjxeA/download?force=true);
   background-size: cover;
   height: 350px;
-  color: white;
-  display: block;
+  color: #d9d9d9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border-radius: 10px;
   margin-right: 10px;
   font-family: "Open Sans";
@@ -240,27 +245,54 @@
   width: 40%;
   float: right;
   margin: 10px;
-  display: -ms-grid;
-  display: grid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   grid-gap: 10px;
+  margin-left: auto;
 }
 
 .banner-article .article-title {
   font-family: "Open Sans";
   font-size: 36px;
   font-weight: bold;
+  margin-bottom: -10px;
 }
 
-.banner-article h5 {
+.banner-article .subsub {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.banner-article info {
   font-family: "Montserrat";
   font-size: 14px;
   font-weight: lighter;
+  margin-top: 5px;
 }
 
-.banner-article h5 span.info {
+.banner-article info span.info {
   font-weight: 900;
   margin: 0;
   padding: 0;
+}
+
+.banner-article h4.article-subtitle {
+  font-family: "Montserrat";
+  font-size: 22px;
+  margin-top: 0px;
+  color: #ccf1ff;
 }
 
 .banner-article p {
@@ -313,7 +345,13 @@
   text-decoration: none;
 }
 
-.articles .normal-article .content h5 {
+.articles .normal-article .content h5.subtitle {
+  font-size: 16px;
+  font-weight: 100;
+  color: rgba(0, 0, 0, 0.745);
+}
+
+.articles .normal-article .content h5.info {
   color: #828282;
 }
 
@@ -557,16 +595,7 @@
   border: 2px solid #bee5eb;
 }
 
-@media (min-width: 1000px) {
-  .desktop-only {
-    display: block !important;
-  }
-}
-
 @media (max-width: 999px) {
-  .mobile-only {
-    display: block !important;
-  }
   .desktop-only {
     display: none !important;
   }

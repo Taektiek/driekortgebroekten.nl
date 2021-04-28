@@ -3,8 +3,9 @@
         url(https://unsplash.com/photos/B8Ee_6rjxeA/download?force=true);
     background-size: cover;
     height: 350px;
-    color: hsl(0, 0%, 100%);
-    display: block;
+    color: hsl(0, 0%, 85%);
+    display: flex;
+    align-items: center;
     border-radius: 10px;
     margin-right: 10px;
     font-family: "Open Sans";
@@ -12,23 +13,38 @@
         width: 40%;
         float: right;
         margin: 10px;
-        display: grid;
+        display: flex;
+        flex-direction: column;
         grid-gap: 10px;
+        margin-left: auto;
     }
     .article-title {
         font-family: "Open Sans";
         font-size: 36px;
         font-weight: bold;
+        margin-bottom: -10px;
     }
-    h5 {
+    .subsub {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    info {
         font-family: "Montserrat";
         font-size: 14px;
         font-weight: lighter;
+        margin-top: 5px;
         span.info {
             font-weight: 900;
             margin: 0;
             padding: 0;
         }
+    }
+    h4.article-subtitle {
+        font-family: "Montserrat";
+        font-size: 22px;
+        margin-top: 0px;
+        color:hsl(197, 100%, 90%);
     }
     p {
         float: right;
@@ -64,7 +80,12 @@
                     text-decoration: none;
                 }
             }
-            h5 {
+            h5.subtitle {
+                font-size: 16px;
+                font-weight: 100;
+                color: hsla(0, 0%, 0%, 0.745);
+            }
+            h5.info {
                 color: hsl(0, 0%, 51%);
             }
             p {
