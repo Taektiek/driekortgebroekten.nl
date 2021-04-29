@@ -14,7 +14,7 @@
     </div>
     <img src="{{ url_for('static',  filename='images/virus.jpg') }}" alt="Een virus" class="bannerimage">
     <article>
-        {{ article.body }}
+        {{ markdown|safe }}
     </article>
 </div>
 

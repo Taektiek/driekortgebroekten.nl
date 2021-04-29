@@ -4,6 +4,7 @@ from app.forms import LoginForm, WriteArticleForm
 from flask_login import login_user, logout_user, login_required, current_user
 from app.models import User, Article
 from werkzeug.urls import url_parse
+from markdown import markdown
 
 # In de view functie moet je aangeven welk deel van de navbar actief is. Dat doe je zo:
 # render_template("...html", naamvanonderdeel="active")
@@ -46,7 +47,7 @@ def boekenclub():
 @app.route('/article/<url>')
 def article(url):
     article = Article.query.filter_by(url=url).first()
-    return render_template("article.html", blogclass="active", article=article)
+    return render_template("article.html", blogclass="active", article=article, markdown=markdown(article.body))
 
 @app.route('/voegtoe', methods=['GET', 'POST'])
 @login_required
