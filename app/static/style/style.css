@@ -533,7 +533,7 @@
   color: #828282;
 }
 
-.write-content form #summary, .write-content form #body {
+.write-content form #summary, .write-content form #body, .write-content form #url {
   font-family: "Open Sans";
 }
 

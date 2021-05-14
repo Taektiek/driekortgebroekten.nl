@@ -4,37 +4,27 @@
 <div class="write-content">
     <form action="" method="post" spellcheck="false">
         {{ form.hidden_tag() }}
-        <div class="title">
-            {{ form.title }}
-            {% for error in form.title.errors %}
-                <span class="error">[{{ error }}]</span>
-            {% endfor %}
-        </div>
-        <div class="subtitle">
-            {{ form.subtitle }}
-            {% for error in form.subtitle.errors %}
-                <span class="error">[{{ error }}]</span>
-            {% endfor %}
-        </div>
-        <div class="subtitle">
-            {{ form.url }}
-            {% for error in form.url.errors %}
-                <span class="error">[{{ error }}]</span>
-            {% endfor %}
-        </div>
-        <div class="summary">
-            {{ form.summary(rows=4, cols=50) }}
-            {% for error in form.summary.errors %}
-                <span class="error">[{{ error }}]</span>
-            {% endfor %}
-        </div>
-        <div class="body">
-            {{ form.body(rows=10, cols=50) }}
-            {% for error in form.body.errors %}
-                <span class="error">[{{ error }}]</span>
-            {% endfor %}
-        </div>
-        <div>{{ form.submit }}</div>
+        {{ form.title }}
+        {% for error in form.title.errors %}
+            <span class="error">[{{ error }}]</span>
+        {% endfor %}
+        {{ form.subtitle }}
+        {% for error in form.subtitle.errors %}
+            <span class="error">[{{ error }}]</span>
+        {% endfor %}
+        {{ form.url }}
+        {% for error in form.url.errors %}
+            <span class="error">[{{ error }}]</span>
+        {% endfor %}
+        {{ form.summary(rows=4, cols=50) }}
+        {% for error in form.summary.errors %}
+            <span class="error">[{{ error }}]</span>
+        {% endfor %}
+        {{ form.body(rows=10, cols=50) }}
+        {% for error in form.body.errors %}
+            <span class="error">[{{ error }}]</span>
+        {% endfor %}
+        {{ form.submit }}
     </form>
 </div>
 {% endblock %}
